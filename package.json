@@ -4,7 +4,7 @@
   "description": "<h2 align=\"center\">Backend</h2>",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Pharom/backend/issues"
   },
-  "homepage": "https://github.com/Pharom/backend#readme"
+  "homepage": "https://github.com/Pharom/backend#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
 }
