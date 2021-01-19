@@ -7,3 +7,9 @@
     
     npm install jest --save-dev
 ```
+
+<h6 align="center">Tests</h6>
+
+```bash
+    yarn test --passWithNoTests
+```
