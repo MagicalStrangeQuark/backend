@@ -7,11 +7,13 @@
     
     npm install --save-dev jest
 
-    npm install --save-dev @types/jest
+    npm install --save-dev supertest
+
+    npm install --save-dev nodemon
 
     npm install --save express
 
-    npm install --save-dev @types/express
+    npm install --save axios
 ```
 
 ```bash
@@ -28,4 +30,8 @@
 
 ```bash
     yarn ts-node-dev --transpile-only --respawn --ignore-watch node_modules src/server.ts
+```
+
+```bash
+    node src/index.ts
 ```
