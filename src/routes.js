@@ -1,25 +1,24 @@
+const express = require('express');
 
-const Router = require('express').Router();
+const UserController = require('./User/UserController');
+const User = new UserController();
 
-Router.use('/', (request, response, next) => {
-    console.log(new Date());
+const app = express();
 
+app.use('/', (request, response, next) => {
     next();
 });
 
-Router.get('/', (request, response) => {
+app.get('/', (request, response) => {
     response.status(200).json({});
 });
 
-/**
- * How To Modularize Routes With The Express Router
- * 
- * @link https://medium.com/@catherinelau/how-to-modularize-routes-with-the-express-router-5ce46f9bb2bd
- * 
- * @author Cat Lau
- */
-const UserRouter = require('./User/UserRouter');
+app.get('/users', (request, response) => {
+    return User.index(request, response);
+});
 
-Router.use('/users', UserRouter);
+app.get('/users/:id', (request, response) => {
+    return User.show(request, response);
+});
 
-module.exports = Router;
+module.exports = app;
