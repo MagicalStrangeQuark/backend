@@ -16,8 +16,17 @@ describe("basic math operations", () => {
 });
 
 describe("server.js", () => {
-    it("/users", async (done) => {
+    it("/", async (done) => {
         const response = await request(app).get('/');
+
+        expect(response.body).toMatchObject({});
+        expect(response.status).toBe(200);
+
+        done();
+    });
+
+    it("/users", async (done) => {
+        const response = await request(app).get('/users');
 
         expect(response.body).toMatchObject({});
         expect(response.status).toBe(200);
