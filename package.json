@@ -4,7 +4,7 @@
   "description": "<h2 align=\"center\">Backend</h2>",
   "main": "index.js",
   "scripts": {
-    "test": "jest --detectOpenHandles --passWithNoTests",
+    "test": "jest --detectOpenHandles --passWithNoTests --collect-coverage --update-snapshot --detectOpenHandles",
     "start": "nodemon --ignore __tests__/ src/index.js"
   },
   "repository": {
