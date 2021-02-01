@@ -4,13 +4,17 @@
 
 ```bash
     npm init -y
-    
+```
+
+```bash
     npm install --save-dev jest
 
     npm install --save-dev supertest
 
     npm install --save-dev nodemon
+```
 
+```bash
     npm install --save express
 
     npm install --save axios
