@@ -8,7 +8,7 @@ class UserController {
      */
     index() {
         return [
-            { "id": 11, "first_name": "Pennie", "last_name": "Spaxman", "email": "pspaxman0@nyu.edu", "gender": "Male", "ip_address": "89.132.9.227" },
+            { "id": 1, "first_name": "Pennie", "last_name": "Spaxman", "email": "pspaxman0@nyu.edu", "gender": "Male", "ip_address": "89.132.9.227" },
             { "id": 2, "first_name": "Belita", "last_name": "McLennan", "email": "bmclennan1@sogou.com", "gender": "Female", "ip_address": "141.86.97.156" },
             { "id": 3, "first_name": "Fiona", "last_name": "Villalta", "email": "fvillalta2@businessinsider.com", "gender": "Female", "ip_address": "220.88.58.170" },
             { "id": 4, "first_name": "Marcello", "last_name": "Thursby", "email": "mthursby3@360.cn", "gender": "Male", "ip_address": "241.204.189.74" },
