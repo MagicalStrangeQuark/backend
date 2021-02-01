@@ -43,3 +43,17 @@
 ```bash
     npm run production
 ```
+
+<h6 align="center">PM2</h6>
+
+```bash
+    npx pm2 ls
+```
+
+```bash
+    npx pm2 stop <name>
+```
+
+```bash
+    npx pm2 delete <name>
+```
