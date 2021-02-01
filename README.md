@@ -23,13 +23,13 @@
 <h6 align="center">Tests</h6>
 
 ```bash
-    yarn test --passWithNoTests
+    npm run test
 ```
 
 <h6 align="center">Run</h6>
 
 ```bash
-    yarn ts-node-dev --transpile-only --respawn --ignore-watch node_modules src/server.ts
+    npm run start
 ```
 
 ```bash
