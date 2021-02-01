@@ -2,11 +2,12 @@ class UserController {
     /**
      * Display a listing of the resource.
      * 
-     * @param {Void}
+     * @param {Object} request
+     * @param {Object} response
      *
      * @return {Array}
      */
-    index() {
+    index(request, response) {
         return [
             { "id": 1, "first_name": "Pennie", "last_name": "Spaxman", "email": "pspaxman0@nyu.edu", "gender": "Male", "ip_address": "89.132.9.227" },
             { "id": 2, "first_name": "Belita", "last_name": "McLennan", "email": "bmclennan1@sogou.com", "gender": "Female", "ip_address": "141.86.97.156" },
