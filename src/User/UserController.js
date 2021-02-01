@@ -10,7 +10,7 @@ class UserController {
      * @return {Array}
      */
     index(request, response) {
-        return response.status(201).json(User.all());
+        return response.status(200).json(User.all());
     }
 
     /**
