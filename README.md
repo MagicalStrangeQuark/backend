@@ -28,7 +28,7 @@
     tsc --init
 ```
 
-<h6 align="center">Tests</h6>
+<h6 align="center">Tests with <a href="https://jestjs.io">Jest</a></h6>
 
 ```bash
     npm run test
