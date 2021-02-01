@@ -1,18 +1,12 @@
 
 const Router = require('express').Router();
 
-/**
- * 
- */
 Router.use('/', (request, response, next) => {
     console.log(new Date());
 
     next();
 });
 
-/**
- * 
- */
 Router.get('/', (request, response) => {
     response.status(200).json({});
 });
