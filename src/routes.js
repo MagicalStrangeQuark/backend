@@ -14,10 +14,16 @@ app.get('/', (request, response) => {
     response.status(200).json({});
 });
 
-app.get('/users', function (request, response) {
+app.get('/users', (request, response) => {
     const User = new UserController();
 
-    response.status(201).json(User.index(request, response));
+    return User.index(request, response);
+});
+
+app.get('/users/:id', (request, response) => {
+    const User = new UserController();
+
+    return User.show(request, response);
 });
 
 module.exports = app;
