@@ -1,7 +1,7 @@
 const request = require('supertest');
 const app = require('../src/routes');
 
-describe("server.js", () => {
+describe("basic math operations", () => {
     it("should test that 1 + 1 === 2", () => {
         expect(1 + 1).toBe(2);
     });
@@ -9,7 +9,9 @@ describe("server.js", () => {
     it("should test that true === true", () => {
         expect(true).toBe(true);
     });
+});
 
+describe("server.js", () => {
     it("/users", async (done) => {
         const response = await request(app).get('/');
 
