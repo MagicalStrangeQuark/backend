@@ -9,6 +9,10 @@ describe("basic math operations", () => {
     it("should test that true === true", () => {
         expect(true).toBe(true);
     });
+
+    it("should test that false === false", () => {
+        expect(false).toBe(false);
+    });
 });
 
 describe("server.js", () => {
