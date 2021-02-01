@@ -20,6 +20,8 @@
     npm install --save axios
 
     npm install --save dotenv
+
+    npm install --save pm2
 ```
 
 ```bash
@@ -35,9 +37,9 @@
 <h6 align="center">Run</h6>
 
 ```bash
-    npm run start
+    npm run development
 ```
 
 ```bash
-    node src/index.ts
+    npm run production
 ```
