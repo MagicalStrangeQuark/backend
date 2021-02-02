@@ -37,6 +37,10 @@
 <h6 align="center">Run</h6>
 
 ```bash
+    docker-compose up -d --build
+```
+
+```bash
     npm run development
 ```
 
