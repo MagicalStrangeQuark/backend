@@ -17,6 +17,8 @@
 ```bash
     npm install --save express
 
+    npm install --save body-parser
+
     npm install --save axios
 
     npm install --save dotenv
