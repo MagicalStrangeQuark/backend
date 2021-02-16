@@ -19,5 +19,6 @@ app.get('/', (request, response) => {
 });
 
 require('./routes/UserRouter.js')(app);
+require('./routes/ProductRouter.js')(app);
 
 module.exports = app;
