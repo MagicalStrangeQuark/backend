@@ -2,9 +2,6 @@ const express = require('express');
 
 const bodyParser = require('body-parser');
 
-const UserController = require('./User/UserController');
-const User = new UserController();
-
 const app = express();
 
 app.use(bodyParser.text());
@@ -21,16 +18,6 @@ app.get('/', (request, response) => {
     response.status(200).json({});
 });
 
-app.get('/users', (request, response) => {
-    return User.index(request, response);
-});
-
-app.get('/users/:id', (request, response) => {
-    return User.show(request, response);
-});
-
-app.post('/users', (request, response) => {
-    return User.store(request, response);
-});
+require('./routes/UserRouter.js')(app);
 
 module.exports = app;
