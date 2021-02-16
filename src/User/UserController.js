@@ -35,16 +35,16 @@ class UserController {
      * @param {Object} request
      * @param {Object} response
      * 
-     * @return {Object} response
+     * @return {Object} User
      */
     show(request, response) {
         const user = User.all().find(u => u.id === parseInt(request.params.id, 10));
 
         if (user) {
             return response.status(200).json(user);
-        } else {
-            return response.status(204).json({});
         }
+
+        return response.status(204).json({});
     }
 
     /**
