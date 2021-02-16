@@ -1,5 +1,5 @@
 module.exports = (app) => {
-    const UserController = require('../User/UserController');
+    const UserController = require('../use-cases/User/UserController');
     const User = new UserController();
 
     app.get('/users', (request, response) => {
