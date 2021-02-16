@@ -10,7 +10,13 @@ class UserController {
      * @return {Array}
      */
     index(request, response) {
-        return response.status(200).json(User.all());
+        return response.status(200).json({
+            data: User.all(),
+            cout: request.query.count || 0,
+            skip: request.query.skip || 0,
+            limit: request.query.limit || 0,
+            status: 200
+        });
     }
 
     /**
@@ -27,7 +33,9 @@ class UserController {
      * 
      * @return {Object} response
      */
-    store() { }
+    store(request, response) {
+        return response.status(201).json(request.body);
+    }
 
     /**
      * Display the specified resource.
