@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --detectOpenHandles --passWithNoTests --collect-coverage --update-snapshot --detectOpenHandles",
-    "development": "nodemon --ignore __tests__/ src/index.js",
+    "development": "nodemon -L --ignore __tests__/ src/index.js",
     "production": "pm2 start src/index.js --name backend"
   },
   "repository": {
